@@ -1,20 +1,58 @@
+* {
+  background-color: lightsalmon;
+}
+
 li {
-    padding: 5px;
-    margin: 5px;
-    background: #eea9e4;
-  }
-  
-  .label {
-    font-weight: bold;
-  }
-  
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: rgb(71, 79, 79);
-  }
-  
-  .form-group {
-    margin-bottom: 5px;
-  }
-  
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: rgb(71, 79, 79);
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 72px;
+  color: darkred;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  color: darkred;
+  text-align: center;
+}
+
+.burgermain {
+  max-width: 15%;
+  max-height: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.burgers {
+  float: left;
+  width: 50%;
+}
+
+.devoured {
+  float: right;
+  width: 50%;
+}
