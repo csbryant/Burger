@@ -1,5 +1,5 @@
 <header>
-  <img  class="burgermain" src="https://github.com/csbryant/Burger/blob/master/public/assets/img/burger.png?raw=true">
+  <img class="burgermain" src="https://github.com/csbryant/Burger/blob/master/public/assets/img/burger.png?raw=true">
   <h1>Eat-Da-Burger!</h1>
 </header>
 
@@ -9,42 +9,45 @@
 
 
 <div class="container">
-<div class="burgers">
-<h2>Burgers</h2>
-<ul>
-  {{#each burger}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-</div>
-<div class="devoured">
-<h2>Devoured Burgers</h2>
-<ul>
-  {{#each burger}}
-    {{#if devoured}}
-      {{> burgers/devoured-block devoured=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-</div>
-
-
-
-
-</br>
-
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="burger" name="burger_name">
+  <div class="row">
+    <div class="col-sm">
+      <h2>Burgers</h2>
+      <ul>
+        {{#each burger}}
+        {{#unless devoured}}
+        {{> burgers/burger-block devoured=true}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+    <div class="col-sm">
+      <h2>Devoured Burgers</h2>
+      <ul>
+        {{#each burger}}
+        {{#if devoured}}
+        {{> burgers/devoured-block devoured=false}}
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
   </div>
+</div>
 
-  <button type="submit" class="submit">Add Burger</button>
-</form>
 
+
+
+
+<footer>
+  <h2>Add a Burger</h2>
+  <form class="create-form">
+
+    <div class="form-group">
+      <label for="ca">Burger Name:</label>
+      <input type="text" id="burger" name="burger_name">
+    </div>
+
+    <button type="submit" class="submit">Add Burger</button>
+  </form>
+  </br>
+</footer>
 </div>
